@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- CDN FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-home">
+        <nav class="navbar">
+            <ul class="lista">
+                <li> <a href="./graficos.html"><i class="fa-solid fa-chart-simple fa-bounce"></i> Gráficos de Gastos </a></li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+
+        <h1 id="texto">Olá, Seja Bem-Vindo!</h1>
+
+        <div class="cards">
+            <div class="card entradas">
+                <div class="tilte-card">
+                    <span>Entradas <i class="fa-solid fa-arrow-up"></i></span>
+                </div>
+                <span><span id="valor-entrada"></span></span>
+            </div>
+
+            <div class="card saidas">
+                <div class="tilte-card">
+                    <span>Saídas <i class="fa-solid fa-arrow-down"></i></span>
+                </div>
+                <span><span id="valor-saida"></span></span>
+            </div>
+
+            <div class="card total">
+                <div class="tilte-card">
+                    <span>Total <i class="fa-solid fa-sack-dollar"></i></span>
+                </div>
+                <span><span id="valor-total"></span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão para abrir o modal -->
+    <div class="acoes">
+        <button id="openModalBtn">Abrir Modal</button>
+        <button id="limparBtn">Limpar Dados</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulário</h2>
+            <form id="myForm">
+                <label for="name">Entradas:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="">Descrição</label>
+                <input type="text" id="descricao" required> 
+                <br>
+                <label for="">data</label>
+                <input type="date" id="data" required> 
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="dados-home">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tbody>
+        </table>
+    </section>
+    <footer id="footer">
+        <span>By Wesley A. Dias - 2023</span>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

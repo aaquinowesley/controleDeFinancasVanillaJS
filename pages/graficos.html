@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gráficos de Gastos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Estilos para a página e os gráficos */
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .chart-container {
+        width: 500px;
+        margin: 20px auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>Gráficos de Gastos</h1>
+    <a href="./home.html">Voltar</a>
+    <div class="chart-container">
+        <canvas id="entradaPorDataChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="saidaPorDataChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="entradaPorDiaChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="saidaPorDiaChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="entradaPorMesChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="saidaPorMesChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="entradaPorAnoChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="saidaPorAnoChart"></canvas>
+    </div>
+
+    <script src="../js/chart.js"></script>
+</body>
+</html>

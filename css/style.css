@@ -1,0 +1,35 @@
+@import url('./reset.css');
+body {
+    background-color: #731ebe;
+}
+h1 {
+    text-align: center;
+    color: #ffffffff;
+}
+.container-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.assets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+a:hover{
+    filter: brightness(2);
+}
+.img2div{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img2{
+    width: 20%;
+}
